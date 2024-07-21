@@ -17,6 +17,10 @@
     />
     <!-- icon  -->
 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- jquery -->
+
     <!-- nav 1 -->
     <div class="nav1">
       <div class="navbar">
@@ -35,7 +39,7 @@
               />
             </div>
             <div class="search_2">
-                <i class="ri-search-line"></i>
+                <i class="ri-search-line qqq1"></i>
             </div>
           </div>
         </div>
@@ -46,10 +50,17 @@
           <i class="ri-shopping-cart-2-fill"></i>
         </div>
         <div class="menus">
-            <i style="color: white;" class="ri-menu-line"></i>
+            <i style="color: white;" class="ri-menu-line pop1"></i>
         </div>
 
       </div>
+    </div>
+    <div class="side_nav">
+      <div class="navs_link" style="border-top: 2px solid black;">Deals</div>
+      <div class="navs_link">Food</div>
+      <div class="navs_link">Beverages</div>
+      <div class="navs_link">Household</div>
+      <div class="navs_link">Most Popular</div>
     </div>
     <!-- nav 1 -->
 
@@ -734,4 +745,16 @@
 <br>
 <br>
   </body>
+  <script>
+    jQuery.noConflict();
+    jQuery(document).ready(function($){
+
+      $(".side_nav").hide();
+
+      $(".pop1").click(function(){
+         $(".side_nav").slideToggle(2000)
+      })
+       
+    })
+  </script>
 </html>
